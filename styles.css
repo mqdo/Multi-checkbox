@@ -1,0 +1,41 @@
+:root {
+  --main-color: #fcc600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  background-color: var(--main-color);
+}
+
+.box {
+  width: clamp(200px, 50vw, 450px);
+  min-height: fit-content;
+  background-color: white;
+  margin: 5rem auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkboxs {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.checkboxs:not(:last-child) {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.checkboxs > * {
+  margin: 1rem;
+}
